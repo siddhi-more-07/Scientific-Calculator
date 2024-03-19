@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ecf0f3;
+}
+
+.container {
+    width: 45%;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 12px 12px 20px #cbced1, -12px -12px 20px #ffffff;
+}
+
+.container h1 {
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.display #screen {
+    width: 97%;
+    height: 78px;
+    font-size: 35px;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background-color: #ecf0f3;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+
+.btns {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns button {
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    margin: 8px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns button:hover {
+    box-shadow: none;
+    background-color: #dadede;
+}
+
+#equalto-btn {
+    background-color: rgb(142, 207, 234);
+    color: white;
+    box-shadow: inset 5px 5px 8px #a6dbf8, inset -5px -5px 8px #78dbf9;
+}
+
+#equalto-btn:hover {
+    box-shadow: none;
+}
+
+#backspc-btn {
+    background-color: rgb(234, 142, 217);
+    color: white;
+    box-shadow: inset 5px 5px 8px #f8a6f4, inset -5px -5px 8px #f978f0;
+}
+
+#clear-btn {
+    background-color: rgb(142, 234, 176);
+    color: white;
+    box-shadow: inset 5px 5px 8px #a6f8b8, inset -5px -5px 8px #78f994;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 80% !important;
+        height: 40%;
+    }
+
+    .btn {
+        margin: 8px 0;
+    }
+
+    .btns {
+        margin-top: 15px;
+        gap: 1px;
+    }
+
+    .btns button {
+        box-shadow: 3px 3px 6px #00000020, -3px -3px 6px #ffffff;
+    }
+
+    .display #screen {
+        font-size: 25px;
+    }
+
+}
+
+
+@media screen and (max-width: 1069px) {
+    .container {
+        width: 55%;
+    }
+
+    .display #screen {
+        height: 70px;
+        margin-right: 15%;
+    }
+
+    .btns button {
+        width: 40px;
+        margin: 0 4px;
+    }
+}
